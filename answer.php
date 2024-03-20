@@ -3,7 +3,7 @@
 
 <head>
   <meta charset="utf-8" />
-  <meta name="description" content="The location program, in PHP" />
+  <meta name="description" content="The Location program, in PHP" />
   <meta name="keywords" content="mths, icd2o" />
   <meta name="author" content="Clara" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -30,26 +30,15 @@
         <img src="./images/street.jpg" alt="street image" width="250" />
       </div>
       <div class="page-content-php">
-        <form action="answer.php" method="POST">
-          <p>Street name</p>
-          <div class="mdl-textfield mdl-js-textfield">
-            <input class="mdl-textfield__input" type="text" name="streetName">
-            <label class="mdl-textfield__label" for="name-input">Street Name here ...</label>
-          </div>
-          <br />
-          <p>Street number</p>
-          <div class="mdl-textfield mdl-js-textfield">
-            <input class="mdl-textfield__input" type=" text" pattern="-?[0-9]*(\.[0-9]+)?" name="streetNumber">
-            <label class="mdl-textfield__label" for="age-input">Street Number here ...</label>
-            <span class="mdl-textfield__error">Input is not a number!</span>
-          </div>
-          <br />
-          <!-- Accent-colored raised button with ripple -->
-          <input class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent" type="submit">
-        </form>
+        <div id="user-info">
+          <?php
+          $streetname = $_POST["streetName"];
+          $streetnumber = $_POST["streetNumber"];
+
+          echo "Your address is: " . $streetname . " " . $streetnumber . ".";
+          ?>
+        </div>
       </div>
     </main>
   </div>
 </body>
-
-</html>
