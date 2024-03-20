@@ -36,7 +36,7 @@
           $streetnumber = $_POST["streetnumber"];
 
           echo "Your info is: " . $streetnumber . " " . $streetname . ".";
-          ?>
+            ?>
         </div>
       </div>
     </main>
