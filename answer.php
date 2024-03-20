@@ -32,8 +32,8 @@
       <div class="page-content-php">
         <div id="user-info">
           <?php
-          $streetname = $_POST["streetName"];
-          $streetnumber = $_POST["streetNumber"];
+          $streetname = $_POST["streetname"];
+          $streetnumber = $_POST["streetnumber"];
 
           echo "Your address is: " . $streetname . " " . $streetnumber . ".";
           ?>

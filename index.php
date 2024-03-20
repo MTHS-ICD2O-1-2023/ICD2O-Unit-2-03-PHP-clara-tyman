@@ -33,13 +33,13 @@
         <form action="answer.php" method="POST">
           <p>Street name</p>
           <div class="mdl-textfield mdl-js-textfield">
-            <input class="mdl-textfield__input" type="text" name="streetName">
+            <input class="mdl-textfield__input" type="text" name="streetname">
             <label class="mdl-textfield__label" for="name-input">Street Name here ...</label>
           </div>
           <br />
           <p>Street number</p>
           <div class="mdl-textfield mdl-js-textfield">
-            <input class="mdl-textfield__input" type=" text" pattern="-?[0-9]*(\.[0-9]+)?" name="streetNumber">
+            <input class="mdl-textfield__input" type=" text" pattern="-?[0-9]*(\.[0-9]+)?" name="streetnumber">
             <label class="mdl-textfield__label" for="age-input">Street Number here ...</label>
             <span class="mdl-textfield__error">Input is not a number!</span>
           </div>
